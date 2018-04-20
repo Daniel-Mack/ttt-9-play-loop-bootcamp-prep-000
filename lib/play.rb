@@ -37,10 +37,10 @@ end
 
 # Define your play method below
 def play(board)
-  move(board, index, current_player = "X")
   turns = 0
   until turns == 9
     turn(board)
     turns += 1
+    move(board, index, current_player = "X")
   end
 end
